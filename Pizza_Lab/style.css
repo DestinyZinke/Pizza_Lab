@@ -1,0 +1,44 @@
+#pizzaList{
+    margin-top: 85px;   
+}
+
+#small_pizza{
+    margin-left: 175px;
+    margin-top: 15px;
+}
+
+#medium_pizza{
+    margin-bottom: 47px;
+}
+
+#large_pizza{
+    margin-left: 48px;
+    margin-bottom: 94px;
+}
+nav{
+    background-color: #ff3039;
+    overflow: hidden;
+    height: 50px;
+}
+
+#navlist{
+    text-decoration: none;
+}
+
+
+.navItem{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 15px;
+    padding-right: 20px;
+    color: #fff;
+    float: left;
+}
+
+#navCompany{
+    margin-top: 10px;
+    margin-right: 700px;
+    font-size: 25px;
+}
+
