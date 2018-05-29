@@ -1,5 +1,9 @@
 var buttonNames = ['Pepperoni', 'Bacon', 'Grilled Chicken', 'Olives', 'Pineapple', 'Canadian Bacon', 'Anchovies', 'Peppers', 'Onions', 'Extra Cheese'];
 var buttons = [];
+var pizza={
+    toppings : [],
+    size : "Default"
+}
 
 
 
@@ -120,7 +124,17 @@ function currentPizza(){
     createToppingContainer();
     createButtonContainer();
 
+    var proceed = document.createElement('BUTTON');
+    proceed.innerHTML = "Proceed";
+    document.body.appendChild(proceed);
+    proceed.setAttribute('id', 'proceed-btn')
+    proceed.addEventListener('click', loadRecipt);
     
+}
+
+function loadRecipt(evt){
+    window.location = "order.html";
+
 }
 
 function createToppingContainer(){
@@ -135,6 +149,8 @@ function createButtonContainer(){
     var buttons = document.createElement('DIV'); 
     buttonNames.forEach(buildButton);
   }
+
+
   
   function buildButton(item, index, arr){
 
@@ -151,7 +167,8 @@ function createButtonContainer(){
     console.log(evt.target.innerText + " clicked");
     var temp = evt.target.innerText;
     console.log(temp);
-    document.getElementById('toppings').innerHTML += temp + "<br>";
+    document.getElementById('toppings').innerHTML += temp + "<br><br>";
+    pizza.toppings.push(temp);
     console.log(document.getElementById('topping_list').innerHTML);
   }
 

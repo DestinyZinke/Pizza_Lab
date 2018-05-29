@@ -91,10 +91,18 @@ a:hover{
   #topping_list{
       margin-left: 950px;
       text-align: center;
-      margin-top: 90px;
+      margin-top: 50px;
       border: 1px solid #000;
       width: 150px;
       height: 200px;
       overflow: auto;
       display: block;
+  }
+  #toppings{
+      margin-top: 15px;
+  }
+
+  #proceed-btn{
+      margin-left:990px;
+      margin-top: 25px;
   }
