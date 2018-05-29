@@ -34,6 +34,17 @@ nav{
     padding-right: 20px;
     color: #fff;
     float: left;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    background-color: #fff;
+    color: #ff3039;
 }
 
 #navCompany{
